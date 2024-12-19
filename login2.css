@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+#form{
+    background-color: white;
+    box-shadow: 0px 1px 15px #424242 ;
+    border-radius: 10%;
+    width: 30%;
+    height: 400px;
+    padding: 10px 15px 0px ;
+    margin-right: 50px;
+    margin: auto;
+}
+#form input{
+    outline: none;
+    border:none;
+    width:90%;
+    height: 20%;
+    padding: 10px;
+    margin: 10px;
+    /* border:1px solid black; */
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+}
+#container img{
+    width: 100%;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+#errorUserNameLogin, #errorPasswordLogin, #errorUserNotFind {
+  display: none;
+}
+
+/* Form Styling */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Styling */
+.inputValid {
+  width: 10%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s ease;
+  font-size: 16px;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* Button Styling */
+button {
+  width: 35%;
+  padding: 10px;
+  margin-left:35%;
+  background-color:#FFCEAE ;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c4741a;
+}
+
+/* Focus and Invalid States */
+.inputValid:focus {
+  border-color: blue;
+}
+
+.inputValid.invalid {
+  border-color: red;
+}
+
+.inputValid.valid {
+  border-color: green;
+}
+form h2 {
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+.submit-btn-hover {
+  background-color: #FFCEAE;
+  color: black;
+}
+
+.submit-btn {
+  background-color: initial;
+  color: initial;
+}

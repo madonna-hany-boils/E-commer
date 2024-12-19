@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="/home.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1>Shoping</h1>
+        <ul>
+          <div style="display: flex; justify-content: space-between;gap:50px;">
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          
+          <li>
+            <a href="#"> Contact </a>
+          </li>
+          <li>
+            <a href="#products"> products </a>
+          </li>
+          <li>
+            <a href="/cart.html" onclick="openCard()"> Cart </a>
+          </li>
+        </div>
+        
+           <!--========================================================================= -->
+          <li class="card1 ">
+           
+            <div class="top-card">
+              <h3>My cart <span id="count">0$</span></h3>
+              <h3><span class="close-card" onclick="closeCard()"><i class="fa-solid fa-xmark"></i></span></h3>
+            </div>
+            <div class="item-in-card">
+              <div class="item-card">
+              </div>
+            </div>
+            <div class="bottom-card">
+              
+          <div class="button-card">
+            <a class="btn-card trans-bg" href="cart.html">Show More</a>
+          </div>
+        </li>
+        </ul>
+        <div style="position: absolute;
+        display: flex
+    ;
+        gap: 30px;
+        list-style: none;
+        right: 50px;">
+
+<li id="getLoginUser" style="font-weight: bold;color: #7f4743;"></li>
+          <i class="fa-solid fa-cart-shopping " style="cursor: pointer;color: #7f4743;" onclick="openCard()"></i>
+          <li>
+            <a href="#"  onclick="deleteUser()" id="getLogin"> Login</a>
+          </li>
+          
+
+         </div>
+      </nav>
+
+      <div class="slider">
+        <button class="prev_btn" onclick="Previous()">&lt;</button>
+        <button class="next_btn" onclick="Next()">&gt;</button>
+
+        <img src="/images/pexels-nietjuh-934070 (1).jpg" alt="" />
+      </div>
+    </header>
+    <main>
+      <section class="products_section" id="products">
+        <h2>OUR PRODUCTS</h2>
+        <div class="buttons">
+          <button id="all">All</button>
+
+          <button id="cat1">BEAUTY</button>
+          <button id="cat2">FRAGRANCES</button>
+          <button id="cat3">FURNITURE</button>
+          <button id="cat4">GROCERIES</button>
+        </div>
+
+        <div class="products"></div>
+      </section>
+    </main>
+    <footer class="footer" style="width: 100%;">
+      <div class="container">
+          <div class="row">
+
+              <div class="footer-col">
+                  <h4>Company</h4>
+                  <ul>
+                      <li><a href="#about">About Us</a></li>
+                      <li><a href="#services">Our Services</a></li>
+                      <li><a href="#team">Meet Our Team</a></li>
+                      <li><a href="#privacy">Privacy Policy</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Get Help</h4>
+                  <ul>
+                      <li><a href="#faq">FAQ</a></li>
+                      <li><a href="#shipping">Delivery
+                              Information</a></li>
+                      <li><a href="#returns">Return Policy</a></li>
+                      <li><a href="#order-status">Order
+                              Status</a></li>
+                      <li><a href="#payment-options">Payment
+                              Options</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Our Products</h4>
+                  <ul>
+                      <li><a href="#prescriptions">Prescription
+                              Medications</a></li>
+                      <li><a href="#otc">Over-the-Counter</a></li>
+                      <li><a href="#supplements">Supplements</a></li>
+                      <li><a href="#health-products">Health &amp; Wellness
+                              Products</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4 >Team Solutions</h4>
+                  <div class="f_social_icon">
+                      <a href="https://www.facebook.com/amira.hashem.9469/" class="fab fa-facebook" aria-label="Facebook" target="_blank"></a>
+                      <a href="https://x.com/?lang=ar" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+                      <a href="https://github.com/FCIamira" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                      <a href="https://www.linkedin.com/in/amira-hashem-505729284/" class="fab fa-instagram" aria-label="Linkedin" target=""></a>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+      <hr>
+      <div style="display: flex;justify-content: space-between;margin: 30px;">
+        <p>
+          The copyright sign: &copy;
+        </p>
+        <a href="#header" style="scroll-behavior: smooth;">
+          <i class="fa-solid fa-arrow-up" style="font-size: 2rem;
+  scroll-behavior: smooth;
+  color: brown;"></i>
+        </a>
+       </div>
+  </footer>
+
+    <script src="/home.js"></script>
+   
+  </body>
+</html>

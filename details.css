@@ -1,0 +1,31 @@
+#productImg{
+    width: 600px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    /* box-shadow: chocolate */
+    box-shadow: 2px 2px 5px ,-2px -2px 5px;
+    
+;
+}
+.addToCart{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: #7f4743;
+    color: white;
+    font-weight: bold;
+  
+}
+#prodcutDetails h3{
+    text-align: center;
+    color: darkslategray;
+    
+}
+.btn{ display: flex;
+    justify-content: center;
+margin-bottom: 50px;}
+.btn:hover{
+    cursor: pointer;
+}
